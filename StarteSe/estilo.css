@@ -1,0 +1,29 @@
+body {
+    background-color: aquamarine;
+    font-size: 18pt;
+}
+
+h1{
+    font-size: 150pt;
+    background-color: green;
+    color: white;
+}
+
+h3{
+    text-decoration: dashed;
+    text-shadow: 10px;
+    background-color: gray;
+    color: blue;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+p {
+    font-size: 12px;
+    background-color: white;
+    color: purple;
+}
+
+#inicio {
+    font-size: 20pt;
+}
