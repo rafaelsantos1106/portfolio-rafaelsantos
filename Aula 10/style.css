@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(149, 255, 0);
+}
+
+main{
+    background-color: white;
+    min-width: 400px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: greenyellow;
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+main strong{
+    color: white;
+    background-color: lightgreen;
+}
+
+main h1{
+    margin: 20px;
+    text-decoration: underline;
+    color: rgb(57, 95, 0);
+}
+
+main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 196, 0),rgb(54, 175, 54), rgb(199, 214, 199));
+    margin: 20px;
+}
+
+main img{
+    width: 100%;
+}
+main img.pequena{
+    max-width: 350px;
+}
+
+main p{
+    margin: 20px;
+}
+
+header{
+    min-height: 150px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgb(54, 155, 54), rgb(2, 203, 2));
+}
+
+header > h1 {
+    color: lightgreen;
+    text-shadow: 2px 2px 0pc black;
+}
+
+header p{
+    font-size: 1.2em;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav{
+    background-color: rgb(54, 155, 54);
+    padding: 15px;
+}
+
+nav > a{
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: rgb(7, 222, 64);
+    color: rgb(0, 0, 0);
+}
+
+main{
+    background-color: white;
+}
+
+div.video{
+    background-color: green;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 52.5%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 1em;   
+    padding: 2px;
+}
+
+aside{
+    background-color: lightgreen;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+}
+
+aside > h3{
+    background-color: green;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: -20px -20px -20px -20px;
+}
+
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: green;
+}

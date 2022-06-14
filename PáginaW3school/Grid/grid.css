@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    grid-area: header;
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+    font-size: 20pt;
+}
+
+.PrimeiraColuna, .SegundaColuna, .TerceiraColuna, .footer{
+    height: 1000px;
+    padding: 15px;
+}
+
+.linha1, .linha2, .linha3{
+    height: 50px;
+    padding: 15px;
+}
+
+.Grid-box{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'linha1 linha2 linha2 linha2 linha3 linha3'
+    'PrimeiraColuna SegundaColuna SegundaColuna SegundaColuna TerceiraColuna TerceiraColuna'
+    'footer footer footer footer footer footer';
+}
+
+.PrimeiraColuna{
+    background-color: rgb(110, 184, 249);
+    grid-area: PrimeiraColuna;
+    margin: 5px;
+}
+
+.SegundaColuna{
+    background-color: brown;
+    grid-area: SegundaColuna;
+    margin: 5px;
+}
+
+.TerceiraColuna{
+    background-color: red;
+    grid-area: TerceiraColuna;
+    margin: 5px;
+}
+
+.linha1{
+    grid-area: linha1;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.linha2{
+    grid-area:linha2;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.linha3{
+    grid-area: linha3;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.Titulo {
+    font: Arial;
+    font-style: italic; 
+    text-decoration: underline;
+    text-decoration-color: yellow;   
+    font-size: 15pt;
+    margin: 10px;
+    text-decoration-line: dashed;
+}
+
+.boxJornal1{grid-area: boxJornal1;}
+.boxJornal2{grid-area: boxJornal2;}
+.boxJornal3{grid-area: boxJornal3;}
+.boxJornal4{grid-area: boxJornal4;}
+.boxJornal5{grid-area: boxJornal5;}
+.boxJornal6{grid-area: boxJornal6;}
+.boxJornal7{grid-area: boxJornal7;}
+.boxJornal8{grid-area: boxJornal8;}
+.boxJornal9{grid-area: boxJornal9;}
+
+.boxJornal1, .boxJornal4, .boxJornal7{
+    
+    height: 90px;
+    margin: 5px;
+    border: 3px solid;
+}
+
+.boxJornal2, .boxJornal5, .boxJornal8{
+    
+    height: 90px;
+    margin: 5px;
+    border: 3px solid;
+}
+
+.boxJornal3, .boxJornal6, .boxJornal9{
+    
+    height: 90px;
+    
+    margin: 5px;
+    border: 3px solid;
+}
+
+p{
+    font-weight: bold;
+    color: chocolate;
+    font-style: italic;
+}
+
+.footer{
+    font-style: bold;
+    grid-area: footer;
+    background-color: bisque;
+}
+
+#Lista1{
+    list-style-type: lower-roman;
+    background-color: antiquewhite;
+    list-style-position: inside;
+    padding-left: 0;
+    font-style: bold;
+}
+
+#Lista1 li{
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+table{
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 2px solid gray;
+    border-right: 1px dashed gray;
+    text-align: left;
+    padding: 1px 9px;
+    background-color: #FFFFAA;
+}
+td{
+    margin: 0;
+    padding: 1px 9px;
+    border-bottom: 1px solid gray;
+}
+
+form > div {
+    margin: 5px;
+}
+
+tr:hover{
+    background-color:rgba(231, 218, 38, 0.982);
+}
+
+.row select{
+    vertical-align: text-top;
+}
+@media (max-width: 600px){
+    .Grid-box{
+        grid-template-areas: 
+        'header header'
+        'linha1 linha2'
+        'linha3 linha3'
+        'PrimeiraColuna SegundaColuna'
+        'TerceiraColuna TerceiraColuna'
+        'footer footer';
+    }
+}

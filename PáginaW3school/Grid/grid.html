@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso Grid</title>
+    
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    
+    <h2>CSS Template using Grid</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nisi vero laboriosam et quidem aliquid aperiam quis, perferendis earum odio iusto expedita amet id delectus. Obcaecati ea similique tempore atque.</p>
+
+    <div class="Grid-box">
+        
+        <div class="header">
+            <h1>Globo.com</h1>
+        </div>
+
+        <div class="linha1"><h6 class="Titulo">Jornalismo</h6></div>
+        <div class="linha2"><h6 class="Titulo">Esportes</h6></div>
+        <div class="linha3"><h6 class="Titulo">Entretenimento</h6></div>
+        
+        <div class="PrimeiraColuna">
+            <ol id="Lista1">
+                <li>Rafael</li>
+                <li>Rodrigo</li>
+                <li>Guilherme</li>
+            </ol>
+
+            <div class="boxJornal1"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal2"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal3"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal4"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal5"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal6"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal7"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal8"><p>STF julga decisão que devolveu mandado cassado</p></div>
+            <div class="boxJornal9"><p>STF julga decisão que devolveu mandado cassado</p></div>
+        </div>
+        <div class="SegundaColuna">
+            <table>
+                <tr>
+                    <th>Jogo</th>
+                    <th>Data</th>
+                    <th>Local</th>
+                </tr>
+                <tr>
+                    <td>América X Cruzeiro</td>
+                    <td>25/06/2035</td>
+                    <td>Toca da Raposa</td>
+                </tr>
+                <tr>
+                    <td>Cruzeiro x Real Madrid</td>
+                    <td>12/12/2023</td>
+                    <td>Araraquara-SP</td>
+                </tr>
+                <tr>
+                    <td>Atletico x CRB</td>
+                    <td>12/03/2024</td>
+                    <td>Alagoas</td>
+                </tr>
+            </table>
+
+            <form>
+                <div>
+                    <label for="opções">Select an option:</label>
+                    <select name="opcao" id="opções">
+                        <option value="1">Primeiro item</option>
+                        <option value="2">Segundo item</option>
+                        <option value="3" selected>Terceiro item</option>
+                    </select>
+                </div>
+            </form>
+
+            <div class="row">
+                <label for="lista">Selecione</label>
+                <select name="escolha" id="lista" multiple size="10">
+                    <optgroup label="Times">
+                        <option value="time1">America-MG</option>
+                        <option value="time2">Mamore</option>
+                        <option value="time3">Corinthians</option>
+                        <option value="time4" disabled>Desportivo Brasil</option>
+                    </optgroup>
+                    <optgroup label="Empresas">
+                        <option value="emp1">America-MG</option>
+                        <option value="emp2">Jornal Correio</option>
+                        <option value="emp3">MRS</option>
+                        <option value="emp4">Rumo Logística</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        
+
+        <div class="TerceiraColuna">
+            <form action="DadosRafael">
+                <p><label for="nome">Nome:</label><input type="text" name="Sobrenome" placeholder="Ex: Rochele" id="nome"></p>
+
+                <p><label for="Sobrenome">Sobrenome:</label><input type="text" placeholder="Ex: Da Silva" id="Sobrenome"></p>
+
+                <P><label for="icor">Cor</label><input type="color" id="icor" name="cor" value="#e66465"></P>
+
+                <P><label for="dtini">Data</label><input type="date" id="dtini" name="dtinicio"  value="2018-01-22" min="2000-01-01" max="2022-06-07"></P>
+
+                <P><label for="email">E-mail</label><input type="email" id="email" size="30" required></P>
+
+                <P><label for="idade">Número</label><input type="number" id="idade" name="idade" min="5" max="100" step="5"></P>
+
+                <P><label for="pass">Senha</label><input type="password" id="pass"  name="password" minlength="8" required></P>
+
+                <P><label for="volume">Intervalo</label><input type="range" id="volume" name="volume" min="0" max="20" value="7"></P>
+
+                <P><label for="site-search">Busca</label><input type="search" id="site-search" name="q"></P>
+
+                <P><label for="appt">Hora</label><input type="time" id="appt" name="appt" min="09:00" max="17:00"></P>
+
+                <P><label for="">URL</label><input type="url" name="url" id="url" placeholder="http://www.globo.com" size="30" required></P>
+
+            <div>
+                <label for="isabores">Sabores:</label>
+                <input list="sabores" id="isabores" name="sabores">
+            
+            <datalist id="sabores">
+                <option value="Chocolate"></option>
+                <option value="Côco"></option>
+                <option value="Menta"></option>
+            </datalist>
+
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetar</button>
+                <button type="button">Botão Genérico</button>
+            </div>
+
+            <fieldset>
+                <legend>Times que Rafael Lafaiete jogou</legend>
+                <div>
+                    <input type="checkbox" id="axe" name="axe" value="A"><label for="axe">América-MG</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="Mamoré" name="Mamore" value="B"><label for="Mamoré">Mamoré</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Corinthians" id="Corinthians" value="C"><label for="Corinthians">Corinthians</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Empresas que Rafael Souza trabalhou</legend>
+
+                <div>
+                    <input type="radio" id="America-MG" name="empresa"><label for="America-MG" value="A">America Mineiro</label>
+                </div>
+                <div>
+                    <input type="radio" id="Jornal" name="empresa"><label for="Jornal" value="B">Jornal Correio da Cidade</label>
+                </div>
+                <div>
+                    <input type="radio" name="empresa" id="MRS"><label for="MRS" check value="C">MRS Logística</label>
+                </div>
+                <div>
+                    <input type="radio" name="empresa" id="Rumo"><label for="Rumo" value="D">Rumo Logística</label>
+                </div>
+            </fieldset>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <h1>Contato</h1>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="mail" name="email" id="email" placeholder="exemplo@email.com" required>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <label for="assunto">Assunto</label>
+                    <select name="assunto" id="assunto">
+                        <option value="" selected></option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="sugestão">Sugestão</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                
+                <fieldset>
+                    <legend>Assunto</legend>
+                    <input type="radio" name="escolha" id="reclamação" checked><label for="reclamação">Reclamação</label>
+                    <input type="radio" name="escolha" id="Sugestão"><label for="Sugestão">Sugestão</label>
+                    <input type="radio" name="escolha" id="Elogio"><label for="Elogio">Elogio</label>
+                    <input type="radio" name="escolha" id="outro"><label for="outro">Outro</label>
+                </fieldset>
+
+                <div>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite a mensagem aqui" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="cadastro" id="cadastro">
+                    <label for="cadastro">Desejo receber e-mails informativos</label>
+                </div>
+                <div>
+                <input type="submit" value="Enviar mensagem">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

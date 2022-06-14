@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    height: 300px;
+  }
+
+  @media (max-width: 600px) {
+    .flex-container {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      
+    }
+    .menu, .conteudo, .third{
+        background-color: rgb(0, 0, 0);
+    }
+  }
+  
+  .flex-container > div {
+    width: 900px;
+    margin: 2px;
+    text-align: justify;
+    text-decoration-line: line-through;
+    line-height: 100px;
+    font-size: 30px;
+  }
+
+  .menu{
+      width: 20%;
+      border-right: 2px dashed rgb(27, 202, 7);
+  }
+
+  .conteudo{
+      width: 10%;
+      background-color: red;
+  }
+
+  .third{
+      width: 40%;
+      background-color: beige;
+  }

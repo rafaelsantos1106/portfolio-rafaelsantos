@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+    color: red;
+}
+
+section{
+    padding: 50px;
+    border-radius: 50px;
+    width: 400px;
+    background: rgba(102, 98, 98, 0);
+    box-shadow: 12px 12px 10px;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    text-align: center;
+    padding: 100px;
+}
